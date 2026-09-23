@@ -54,6 +54,14 @@ uma parte do projeto sem mexer nas outras.
    por padrão (perfil `latexmk`).
 
 ### Linha de comando
+Com `latexmk` (configurado em `.latexmkrc`):
+```bash
+latexmk        # compila main.tex (pdflatex + biber, quantas vezes for preciso)
+latexmk -pvc   # recompila automaticamente a cada alteração
+latexmk -c     # remove arquivos auxiliares
+```
+
+Ou manualmente:
 ```bash
 pdflatex main.tex
 biber main
