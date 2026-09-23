@@ -1,0 +1,51 @@
+% =============================================================
+%  Preâmbulo: pacotes, formatação e configuração de referências.
+%  Edite aqui fontes, margens e estilo de citação do projeto.
+% =============================================================
+
+% --- Codificação e idioma ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+
+% --- Layout de página ---
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.5}
+
+% --- Listas ---
+\usepackage{enumitem}
+
+% --- Tabelas ---
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+
+% --- Links e referências cruzadas ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black,
+    pdftitle={Pré-Projeto de Dissertação - PPGCF/UNIFESSPA},
+    pdfauthor={}
+}
+
+% --- Títulos de seção (estilo do Anexo 02: negrito, sem numeração) ---
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\bfseries\large}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{1.5em}{0.8em}
+
+% --- Citações entre aspas localizadas (evita aviso do biblatex) ---
+\usepackage{csquotes}
+
+% --- Bibliografia (biblatex + biber) ---
+% As referências ficam em referencias.bib; para citar no texto use \cite{chave}.
+% O comando \printbibliography é chamado dentro de sections/07_referencias.tex.
+\usepackage[
+    backend=biber,
+    style=numeric,
+    sorting=none,
+    date=year
+]{biblatex}

@@ -1,0 +1,29 @@
+% =============================================================
+%  Pré-Projeto de Dissertação — PPGCF/UNIFESSPA
+%  Arquivo principal: monta o documento a partir dos módulos
+%  em sections/ e do preâmbulo em preamble.tex.
+%
+%  Compilar com: pdflatex -> biber -> pdflatex -> pdflatex
+%  (ou use o botão "Recompile" do Overleaf, que já faz isso)
+% =============================================================
+\documentclass[12pt,a4paper]{article}
+
+\input{preamble}
+
+\addbibresource{referencias.bib}
+
+\begin{document}
+
+\input{sections/00_capa}
+
+\input{sections/01_resumo}
+\input{sections/02_justificativa}
+\input{sections/03_fundamentacao}
+\input{sections/04_objetivos}
+\input{sections/05_metodologia}
+\input{sections/06_cronograma}
+\input{sections/07_referencias}
+
+\input{sections/99_assinatura}
+
+\end{document}
