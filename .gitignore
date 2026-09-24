@@ -1,0 +1,47 @@
+# =============================================================
+#  Arquivos gerados pela compilação LaTeX — nunca commitar.
+#  Tudo aqui é recriado por `latexmk` a partir dos .tex/.bib.
+# =============================================================
+
+# --- Auxiliares do LaTeX ---
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.synctex
+*.xdv
+*.dvi
+*.nav
+*.snm
+*.vrb
+
+# --- Bibliografia (biber/bibtex) ---
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*-blx.bib
+
+# --- PDF gerado ---
+# O PDF é recompilado a partir das fontes. Para versionar uma entrega
+# específica, use uma tag/release do Git ou force: git add -f main.pdf
+main.pdf
+
+# --- Pasta de saída (caso configure outDir/-outdir no futuro) ---
+build/
+out/
+
+# --- Editores e sistema ---
+*~
+*.swp
+*.bak
+*.backup
+*.sav
+.DS_Store
+Thumbs.db
